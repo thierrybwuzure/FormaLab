@@ -19,7 +19,7 @@ document.querySelector('#load-workshops').addEventListener('click', async () => 
   message.textContent = 'Chargement des ateliers…';
   list.replaceChildren();
   try {
-    const response = await fetch('./data/atelier.json');
+    const response = await fetch('./data/ateliers.json');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const workshops = await response.json();
     for (const workshop of workshops) {
