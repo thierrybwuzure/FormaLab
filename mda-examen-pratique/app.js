@@ -2,7 +2,7 @@ const UNIT_PRICE = 60;
 const BOOKING_FEE = 10;
 
 function calculateTotal(quantity) {
-  return quantity * (UNIT_PRICE + BOOKING_FEE);
+  return quantity * UNIT_PRICE + BOOKING_FEE;
 }
 
 const totalNode = document.querySelector('#total');
