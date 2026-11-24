@@ -55,3 +55,23 @@ J'ai changé la ligne 5 en quantity * UNIT_PRICE + BOOKING_FEE. Maintenant les f
 
 Test de validation
 Après la correction, j'ai testé: 1 place = 70 €, 3 places = 190 €, 5 places = 310 €. Je devais trouver 70, 190 et 310.
+
+Bug 2: les ateliers ne se chargent pas (mission B)
+
+Reproduction
+Je clique sur « Charger les ateliers ».
+
+Résultat attendu
+Les 3 ateliers du fichier JSON s'affichent.
+
+Résultat observé
+Le message « Impossible de charger les ateliers. » apparaît et la liste reste vide.
+
+Hypothèse et preuve
+Je pense que le nom du fichier demandé est faux. Dans Network, la requête data/atelier.json donne une erreur 404 (voir ma capture), alors que le fichier s'appelle ateliers.json.
+
+Correction
+J'ai changé la ligne 22 de app.js: atelier.json est devenu ateliers.json.
+
+Test de validation
+Après la correction, la requête donne 200 et les 3 ateliers s'affichent.
