@@ -75,3 +75,7 @@ J'ai changé la ligne 22 de app.js: atelier.json est devenu ateliers.json.
 
 Test de validation
 Après la correction, la requête donne 200 et les 3 ateliers s'affichent.
+
+Bug Responsive
+
+J'ai changé la ligne 24 de style.css: width: 860px est devenu max-width: 860px dans .card, pour que la carte rétrécisse sur mobile.
