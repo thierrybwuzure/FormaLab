@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,21 +8,41 @@
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
 </head>
+
 <body>
   <header class="site-header">
     <strong>FormaLab</strong>
     <nav aria-label="Navigation principale">
-      <a href="#">Accueil</a> <a href="#">À propos</a>
-      <a href="#">Formations</a> <a href="#">Ateliers</a>
-      <a href="#">Équipe</a> <a href="#">Dates</a>
-      <a href="#">Informations</a> <a href="#">Tarifs</a>
-      <a href="#">Contact</a>
+      <ul class="menu">
+        <li><a href="#">Accueil</a></li>
+
+        <li>
+          <a href="#">À propos</a>
+          <ul>
+            <li><a href="#">Équipe</a></li>
+            <li><a href="#">Informations</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Formations</a>
+          <ul>
+            <li><a href="#">Ateliers</a></li>
+            <li><a href="#">Dates</a></li>
+            <li><a href="#">Tarifs</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </header>
   <main class="card">
     <h1>Bienvenue chez FormaLab</h1>
-    <p>Nous proposons des activités, des rencontres, des moments de découverte et de nombreuses informations sur notre organisme.</p>
-    <p>Réservez une ou plusieurs places pour un atelier de développement web. Une place coûte 60 €, auxquels s'ajoutent 10 € de frais de dossier PAR COMMANDE.</p>
+    <p>Nous proposons des activités, des rencontres, des moments de découverte et de nombreuses informations sur notre
+      organisme.</p>
+    <p>Réservez une ou plusieurs places pour un atelier de développement web. Une place coûte 60 €, auxquels s'ajoutent
+      10 € de frais de dossier PAR COMMANDE.</p>
 
     <h2>Catalogue</h2>
     <button id="load-workshops" type="button">Charger les ateliers</button>
@@ -31,16 +52,20 @@
     <h2>Réservation</h2>
     <label for="qty">Nombre de places</label>
     <input id="qty" type="number" min="1" value="1">
+    <label for="email">Email</label>
     <input id="email" type="email" placeholder="Votre e-mail">
     <button id="calculate" type="button">Calculer le total</button>
-    <p id="total">Total : —</p>
+    <p id="total" role="status">Total : —</p>
+
+    <p>Pour recevoir la confirmation, cliquez sur le contrôle situé sous ce texte.</p>
+    <button id="confirm" class="action" type="button">Confirmer ma réservation</button>
+    <p id="feedback" role="status"></p>
 
     <h2>Informations d'accès</h2>
-    <img class="map" src="assets/plan-acces.svg">
+    <img class="map" src="assets/plan-acces.svg"
+      alt="Plan d'accès : FormaLab, Salle B, entrée accessible cour Rue du Canal 12">
     <p>Nos locaux sont situés près du canal. Pour venir, consultez le plan ci-dessus.</p>
-    <p>Pour recevoir la confirmation, cliquez sur le contrôle situé sous ce texte.</p>
-    <div id="confirm" class="action">Confirmer ma réservation</div>
-    <p id="feedback"></p>
   </main>
 </body>
+
 </html>
