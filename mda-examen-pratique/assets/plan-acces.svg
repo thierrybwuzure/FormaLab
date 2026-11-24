@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" role="img">
+  <rect width="850" height="240" fill="#f5f8fb"/>
+  <rect x="35" y="40" width="780" height="45" fill="#9bd5e6" rx="8"/>
+  <text x="350" y="69" font-family="Arial" font-size="23" fill="#17324a">Canal</text>
+  <path d="M420 85 V220" stroke="#c3cbd3" stroke-width="75"/>
+  <path d="M420 85 V220" stroke="#ffffff" stroke-width="3" stroke-dasharray="12 13"/>
+  <rect x="500" y="105" width="240" height="100" fill="#cbd5e1" stroke="#64748b"/>
+  <text x="526" y="141" font-family="Arial" font-size="20" fill="#203145">FormaLab - Salle B</text>
+  <text x="525" y="168" font-family="Arial" font-size="15" fill="#203145">Entrée accessible : cour</text>
+  <text x="523" y="189" font-family="Arial" font-size="15" fill="#203145">Rue du Canal 12</text>
+</svg>
